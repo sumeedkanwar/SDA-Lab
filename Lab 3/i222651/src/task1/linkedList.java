@@ -19,9 +19,16 @@ public class linkedList {
 	
 	public void display()
 	{
-        for (int i = 0; i < list.size(); i++)
-        {
-            System.out.println(list.get(i));
-        }
+		if (list.isEmpty())
+		{
+			System.out.println("List is empty");
+		}
+		else
+		{			
+			for (int i = 0; i < list.size(); i++)
+			{
+				System.out.println(list.get(i));
+			}
+		}
     }
 }

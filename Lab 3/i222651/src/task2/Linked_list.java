@@ -14,16 +14,23 @@ public class Linked_list
 	
 	public void iterate(int position)
 	{
-		if(position > 0 && position <= list.size())
+		if (list.isEmpty())
 		{
-			for (int i = position; i < list.size(); i++)
-	        {
-	            System.out.println(list.get(i));
-	        }
+			System.out.println("List is empty");
 		}
 		else
-		{
-			System.out.println("Invalid position");
+		{			
+			if(position > 0 && position <= list.size())
+			{
+				for (int i = position; i < list.size(); i++)
+				{
+					System.out.println(list.get(i));
+				}
+			}
+			else
+			{
+				System.out.println("Invalid position");
+			}
 		}
 		
         
