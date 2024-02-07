@@ -1,6 +1,7 @@
 package task2;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class Linked_list
 {
@@ -20,12 +21,13 @@ public class Linked_list
 		}
 		else
 		{			
-			if(position > 0 && position <= list.size())
+			if (position > 0 && position <= list.size())
 			{
-				for (int i = position; i < list.size(); i++)
-				{
-					System.out.println(list.get(i));
-				}
+                ListIterator<Integer> iterator = list.listIterator(position - 1);
+                while (iterator.hasNext())
+                {
+                    System.out.println(iterator.next());
+                }
 			}
 			else
 			{
