@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="hamd" class="Sumeed.Task2.Hamd">
+        <constructor-arg value="Teri" />
+        <constructor-arg value="Molana Ahmed Parta Paghri" />
+        <constructor-arg value="346" />
+    </bean>
+
+    <bean id="naat" class="Sumeed.Task2.Naat">
+        <constructor-arg value="Allah Hoo Allah Hoo" />
+        <constructor-arg value="Shahbaz Qamar Fareedi" />
+        <constructor-arg value="580" />
+    </bean>
+
+    <bean id="mp3Player" class="Sumeed.Task2.MP3Player">
+        <constructor-arg>
+            <ref bean="naat" />
+        </constructor-arg>
+    </bean>
+</beans>

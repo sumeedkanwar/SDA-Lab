@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.i222651.HelloController">
+  <children>
+    <VBox prefHeight="504.0" prefWidth="802.0">
+      <children>
+        <Pane prefHeight="114.0" prefWidth="800.0">
+          <children>
+            <MenuBar prefHeight="30.0" prefWidth="798.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="New" />
+                    <MenuItem mnemonicParsing="false" text="Open" />
+                    <MenuItem mnemonicParsing="false" text="Save" />
+                    <MenuItem mnemonicParsing="false" text="Save As" />
+                    <MenuItem mnemonicParsing="false" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem fx:id="addBookMenuItem" onAction="#openAddBookDialog" text="Add Book" />
+                    <MenuItem fx:id="editBookMenuItem" onAction="#openEditBookDialog" text="Edit Book" />
+                    <MenuItem fx:id="deleteBookMenuItem" onAction="#openDeleteBookDialog" text="Delete Book" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                  <items>
+                    <MenuItem fx:id="viewAllBooksMenuItem" onAction="#openViewAllBooksDialog" text="View All Books" />
+                    <MenuItem fx:id="searchBooksMenuItem" onAction="#openSearchBooksDialog" text="Search Books" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          </children>
+        </Pane>
+        <Pane prefHeight="592.0" prefWidth="800.0">
+          <children>
+            <Label layoutX="148.0" layoutY="190.0" text="Library Management System">
+              <font>
+                <Font size="40.0" />
+              </font>
+            </Label>
+            <Label layoutX="299.0" layoutY="248.0" text="Sumeed Jawad Kanwar">
+              <font>
+                <Font size="20.0" />
+              </font>
+            </Label>
+            <Label layoutX="364.0" layoutY="278.0" text="22I-2651">
+              <font>
+                <Font size="18.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+        <Pane prefHeight="93.0" prefWidth="800.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="5.0" prefHeight="17.0" prefWidth="781.0" text="Welcome to the Library Management System" />
+               </children>
+        </Pane>
+      </children>
+    </VBox>
+  </children>
+</HBox>

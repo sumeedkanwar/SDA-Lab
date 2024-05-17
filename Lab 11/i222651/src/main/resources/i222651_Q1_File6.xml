@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="espresso" class="Sumeed.Task1.Espresso">
+        <property name="size" value="Regular" />
+        <property name="price" value="4.99" />
+    </bean>
+
+    <bean id="latte" class="Sumeed.Task1.Latte">
+        <property name="size" value="Regular" />
+        <property name="price" value="3.99" />
+    </bean>
+
+    <bean id="coffeeShop" class="Sumeed.Task1.CoffeeShop" autowire="byName">
+    	<property name="coffee" ref="espresso"/>
+    </bean>
+    
+    <bean id="CoffeeShop" class="Sumeed.Task1.CoffeeShop" autowire="byName">
+    	<property name="coffee" ref="latte"/>
+    </bean>
+</beans>

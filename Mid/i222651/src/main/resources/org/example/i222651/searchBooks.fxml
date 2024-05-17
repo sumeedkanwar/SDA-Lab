@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.i222651.SearchBooksController">
+    <VBox layoutX="50.0" layoutY="194.0" prefHeight="298.0" prefWidth="700.0" spacing="10">
+        <TableView fx:id="searchTableView" prefHeight="300.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="titleColumn" prefWidth="262.0" text="Title" />
+                <TableColumn fx:id="authorColumn" prefWidth="167.0" text="Author" />
+                <TableColumn fx:id="isbnColumn" minWidth="4.0" prefWidth="137.0" text="ISBN" />
+                <TableColumn fx:id="availabilityColumn" minWidth="0.0" prefWidth="133.0" text="Availability" />
+            </columns>
+        </TableView>
+    </VBox>
+   <Label layoutX="297.0" layoutY="58.0" text="Search Books">
+      <font>
+         <Font size="35.0" />
+      </font>
+   </Label>
+     <Button layoutX="680.0" layoutY="143.0" onAction="#searchBooks" text="Search">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Button>
+     <TextField fx:id="searchField" layoutX="52.0" layoutY="143.0" prefHeight="35.0" prefWidth="621.0" promptText="Enter Title or Author">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </TextField>
+   <Label layoutX="10.0" layoutY="583.0" prefHeight="17.0" prefWidth="781.0" text="Search book by title or author name" />
+</AnchorPane>

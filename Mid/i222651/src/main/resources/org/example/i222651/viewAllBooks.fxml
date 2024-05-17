@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.i222651.ViewAllBooksController">
+    <VBox layoutX="50.0" layoutY="159.0" prefHeight="362.0" prefWidth="700.0" spacing="10">
+        <TableView fx:id="searchTableView" prefHeight="368.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="titleColumn" prefWidth="262.0" text="Title" />
+                <TableColumn fx:id="authorColumn" prefWidth="167.0" text="Author" />
+                <TableColumn fx:id="isbnColumn" minWidth="4.0" prefWidth="137.0" text="ISBN" />
+                <TableColumn fx:id="availabilityColumn" minWidth="0.0" prefWidth="133.0" text="Availability" />
+            </columns>
+        </TableView>
+    </VBox>
+    <Label layoutX="287.0" layoutY="57.0" text="View All Books">
+        <font>
+            <Font size="35.0" />
+        </font>
+    </Label>
+    <Label layoutX="10.0" layoutY="583.0" prefHeight="17.0" prefWidth="781.0" text="View All Books in the Library" />
+</AnchorPane>
